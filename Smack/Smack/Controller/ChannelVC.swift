@@ -25,6 +25,10 @@ class ChannelVC: UIViewController
         //        tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChanged(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        
+//        MessageService.instance.findAllChannel { (success) in
+//            
+//        }
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
